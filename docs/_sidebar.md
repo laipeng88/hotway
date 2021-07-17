@@ -1,2 +1,2 @@
-* [使用](README)
-* [指南](guide)
+* [安装指导](README.md)
+* [使用教程](guide.md)

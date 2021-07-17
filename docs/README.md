@@ -12,15 +12,15 @@
 Eclipse会自动加载Maven依赖包，初次加载会比较慢（根据自身网络情况而定）  
 * 创建数据库hotway-station并导入数据脚本  
 * 打开项目运行com.ruoyi.RuoYiApplication.java，出现如下图表示启动成功。 
-![](/_media/1.png)  
+![](_media/1.png)  
 * 打开浏览器，输入：(http://localhost:8088  （默认账户/密码 admin/admin888）
-![](/_media/4.png)  
+![](_media/4.png)  
 * 若能正确展示登录页面，并能成功登录，菜单及页面展示正常，则表明环境搭建成功。
-![](/_media/5.png)
+![](_media/5.png)
 ## 必要配置
 
 * 修改数据库连接，编辑resources目录下的application-druid.yml  
-![](/_media/2.png) 
+![](_media/2.png) 
 * 修改服务器配置，编辑resources目录下的application.yml  
-![](/_media/3.png) 
+![](_media/3.png) 
 

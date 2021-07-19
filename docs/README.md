@@ -8,9 +8,8 @@
 ## 安装教程
 
 * 前往[Gitee](https://e.gitee.com/shenzhen-hetuo-innovation/repos/shenzhen-hetuo-innovation/power-station/sources)下载解压到工作目录  
-* 导入到Eclipse，菜单 File -> Import，然后选择 Maven -> Existing Maven  Projects，点击 Next> 按钮，选择工作目录，然后点击 Finish 按钮，即可成功导入。  
-Eclipse会自动加载Maven依赖包，初次加载会比较慢（根据自身网络情况而定）  
-* 创建数据库hotway-station并导入数据脚本
+* 导入到Eclipse，菜单 File -> Import，然后选择 Maven -> Existing Maven  Projects，点击 Next> 按钮，选择工作目录，然后点击 Finish 按钮，即可成功导入,Eclipse会自动加载Maven依赖包，初次加载会比较慢（根据自身网络情况而定）  
+* 创建数据库hotway-station并导入数据脚本  
 ![](_media/27.png)
 * 修改数据库连接，编辑resources目录下的application-druid.yml  
 ![](_media/2.png) 

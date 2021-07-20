@@ -1,5 +1,53 @@
 ## 项目网站
+
 * **[电动汽车充电站全寿命周期服务系统](http://39.108.136.17?_blank)**
+
+## 项目框架
+
+项目使用的是若依框架，官方文档(http://doc.ruoyi.vip/ruoyi/)
+
+## 技术选型
+
+##### 1、系统环境
+
+* Java EE 8
+* Servlet 3.0
+* Apache Maven 3
+
+##### 2、主框架
+* Spring Boot 2.2.x
+* Spring Framework 5.2.x
+* Apache Shiro 1.7
+
+##### 3、持久层
+* Apache MyBatis 3.5.x
+* Hibernate Validation 6.0.x
+* Alibaba Druid 1.2.x
+
+##### 4、视图层
+* Bootstrap 3.3.7
+* Thymeleaf 3.0.x
+
+## 准备工作
+
+**JDK >= 1.8 (推荐1.8版本)**  
+**Mysql >= 5.7.0 (推荐5.7版本)**  
+**Maven >= 3.0**
+
+## 安装教程
+
+* 前往[Gitee](https://e.gitee.com/shenzhen-hetuo-innovation/repos/shenzhen-hetuo-innovation/power-station/sources)下载解压到工作目录  
+* 导入到Eclipse，菜单 File -> Import，然后选择 Maven -> Existing Maven  Projects，点击 Next> 按钮，选择工作目录，然后点击 Finish 按钮，即可成功导入,Eclipse会自动加载Maven依赖包，初次加载会比较慢（根据自身网络情况而定）  
+* 创建数据库hotway-station并导入数据脚本  
+![](_media/27.png)
+* 修改数据库连接，编辑resources目录下的application-druid.yml  
+![](_media/2.png) 
+* 打开项目运行com.ruoyi.RuoYiApplication.java，出现如下图表示启动成功。 
+![](_media/1.png)  
+* 打开浏览器，输入：localhost（默认账户/密码 admin/admin888）
+![](_media/4.png)  
+* 若能正确展示登录页面，并能成功登录，菜单及页面展示正常，则表明环境搭建成功。
+![](_media/5.png)
 
 ## 文件结构
 ~~~
@@ -31,6 +79,7 @@ com.ruoyi
 ~~~  
 
 ## 配置文件
+
 * 通用配置 application.yml
 ~~~
 # 项目相关配置
@@ -237,7 +286,9 @@ gen:
 ~~~
 
 ## 核心技术
+
 #### SpringBoot框架
+
 1、介绍  
 Spring Boot是一款开箱即用框架，提供各种默认配置来简化项目配置。让我们的Spring应用变的更轻量化、更快的入门。 在主程序执行main函数就可以运行。你也可以打包你的应用为jar并通过使用java -jar来运行你的Web应用。它遵循"约定优先于配置"的原则， 使用SpringBoot只需很少的配置，大部分的时候直接使用默认的配置即可。同时可以与Spring Cloud的微服务无缝结合。
 
@@ -250,6 +301,7 @@ Spring Boot是一款开箱即用框架，提供各种默认配置来简化项目
 * 使开发变得简单： 极大地提高了开发快速构建项目、部署效率。
 
 #### Shiro安全控制
+
 1、介绍  
 Apache Shiro是Java的一个安全框架。Shiro可以帮助我们完成：认证、授权、加密、会话管理、与Web集成、缓存等。其不仅可以用在 JavaSE环境，也可以用在 JavaEE 环境。  
 
@@ -280,6 +332,7 @@ Apache Shiro是Java的一个安全框架。Shiro可以帮助我们完成：认�
 * 应用代码通过Subject来进行认证和授权，而Subject又委托给SecurityManager； 我们需要给Shrio的SecurityManager注入Realm，从而让SecurityManager能得到合法的用户及其权限进行判断，Shiro不提供维护用户/权限，而是通过Realm让开发人员自己注入。
 
 #### Thymeleaf模板
+
 1、介绍  
 Thymeleaf是一个用于Web和独立Java环境的模板引擎，能够处理HTML、XML、JavaScript、CSS甚至纯文本。能轻易的与Spring MVC等Web框架进行集成作为Web应用的模板引擎。 与其它模板引擎（比如FreeMaker）相比，Thymeleaf最大的特点是能够直接在浏览器中打开并正确显示模板页面，而不需要启动整个Web应用（更加方便前后端分离，比如方便类似VUE前端设计页面），抛弃JSP吧。 Thymeleaf 3.0是一个完全彻底重构的模板引擎，极大的减少内存占用和提升性能和并发性，避免v2.1版因大量的输出标记的集合产生的资源占用。 Thymeleaf 3.0放弃了大多数面向DOM的处理机制，变成了一个基于事件的模板处理器，它通过处理模板标记或文本并立即生成其输出，甚至在新事件之前响应模板解析器/缓存事件。Thymeleaf是Spring Boot官方的推荐使用模板。
 
